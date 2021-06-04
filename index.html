@@ -1,0 +1,56 @@
+<h1>Algoritmos y estructura de datos</h1>
+
+<script>
+    /*
+    1. Crear un algoritmo que recorra un array unidimensional conteniendo letras y números: [ “a”, 10, “b”, “hola”, 122, 15]
+    a. Obtenga un array que contenga solo letras
+    b. Obtenga un array que contenga sólo números
+    c. Obtenga el mayor número del array anterior
+    */
+
+
+    let array = ['a', 10, 'b', 'hola', 122, 15];
+    let arrayLetras = [];
+    let arrayNumeros = [];
+    let numeroMayor = '0';
+
+    array.forEach(element => {
+        if (typeof element === 'string') {
+            arrayLetras.push(element)
+        } else if (typeof element === 'number') {
+            arrayNumeros.push(element);
+            if(element > numeroMayor){
+            numeroMayor = element
+        }}
+
+    });
+
+    console.log(
+        'Array que contiene sólo letras: ' + arrayLetras)
+    console.log(
+        'Array que contiene sólo números: ' + arrayNumeros)
+    console.log(
+        'Array que contiene el número más grande: ' + numeroMayor)
+    
+
+    /*Crear un algoritmo de búsqueda que verifique que: el valor let a = 10 no esté dentro del array: [ 1, 11, “a”, “b”, 123]
+    Utilizar el loop FOR
+    */
+
+    let arrayDos = [1, 11, 'a', 'b', 123];
+    let a = 10;
+    let pertenece = 0;
+
+    arrayDos.forEach(element => {
+        if (element === a) {
+            pertenece = 1
+        }
+    });
+
+    if (pertenece === 0) {
+        console.log('Solución ejercicio 2 :' + a + ' no pertenece al array')
+    } else (console.log('Solución ejercicio 2 :' + a + ' pertenece al array'))
+
+
+
+</script>
