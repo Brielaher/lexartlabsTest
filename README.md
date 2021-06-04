@@ -1,2 +1,2 @@
-# lexartlabsTest
+# LexartlabsTest
 Test FrontEnd EntryLevel - Software
